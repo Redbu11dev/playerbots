@@ -286,9 +286,9 @@ AiPlayerbot.RandomBotQuestIds = 7848,3802,5505,6502,7761,9378
 ##################################################################################
 
 # Chance to reply to toxic links with toxic links (0-100)
-# AiPlayerbot.ToxicLinksRepliesChance = 100
+# AiPlayerbot.ToxicLinksRepliesChance = 30
 # Chance to reply to thunderfury with thunderfury (0-100)
-# AiPlayerbot.ThunderfuryRepliesChance = 100
+# AiPlayerbot.ThunderfuryRepliesChance = 40
 # Bots will chat in guild about certain events (int) (0-100)
 # AiPlayerbot.GuildRepliesRate = 100         # Reply someone saying something.
 
@@ -729,7 +729,18 @@ AiPlayerbot.SpellDistance = 26.0
 AiPlayerbot.ShootDistance = 26.0
 #AiPlayerbot.ReactDistance = 150.0
 #AiPlayerbot.GrindDistance = 75.0
-#AiPlayerbot.LootDistance = 15.0
+#overall loot distance
+#AiPlayerbot.LootDistance = 25.0
+#loot distance when bot is a group member (not leader)
+#AiPlayerbot.GroupMemberLootDistance = 15.0
+#loot distance when bot is a group member (not leader) and has real player master (if player is group leader)
+#AiPlayerbot.GroupMemberLootDistanceWithRealMaster = 10.0
+#overall gathering distance
+#AiPlayerbot.GatheringDistance = 15.0
+#gathering distance when bot is a group member (not leader)
+#AiPlayerbot.GroupMemberGatheringDistance = 10.0
+#gathering distance when bot is a group member (not leader) and has real player master (if player is group leader)
+#AiPlayerbot.GroupMemberGatheringDistanceWithRealMaster = 5.0
 #AiPlayerbot.FleeDistance = 8.0
 #AiPlayerbot.TooCloseDistance = 5.0
 #AiPlayerbot.MeleeDistance = 1.5
@@ -739,6 +750,16 @@ AiPlayerbot.ShootDistance = 26.0
 #AiPlayerbot.ContactDistance = 0.5
 #AiPlayerbot.AoeRadius = 10
 AiPlayerbot.RpgDistance = 200
+#AiPlayerbot.ProximityDistance = 20.0
+
+#bots will destroy all gray items in bags before looting (if bags are full and loot has no money or doesn't add to stacks in bags)
+# AiPlayerbot.DestroyAllGrayItemsBeforeLooting = 0
+#bots will destroy all gray items in bags before gathering (if bags are full and loot doesn't add to stacks in bags)
+# AiPlayerbot.DestroyAllGrayItemsBeforeGathering = 0
+
+# Destroy all gray items in bags if has no free bag space for quest items in bags, and if item stacks are full
+# applies to both looting and gathering
+# AiPlayerbot.DestroyAllGrayItemsBeforeLootingIfLootHasQuestItems = 1
 
 # Bot can flee for enemy
 AiPlayerbot.FleeingEnabled = 1
